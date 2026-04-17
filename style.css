@@ -1,12 +1,14 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    padding: 0;
-    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
     color: white;
+    text-align: center;
 
-    /* 🔥 Gradient Background */
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b');
+
+    background-size: cover;
+    background-position: center;
 }
 
 /* Header */
@@ -40,25 +42,25 @@ h1 {
 
 /* Section */
 section {
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* Cards */
 .card {
-    background: rgba(255, 255, 255, 0.1);
-    margin: 15px auto;
-    padding: 15px;
-    width: 250px;
+    width: 220px;
+    margin: 15px;
+    padding: 20px;
     border-radius: 15px;
-    cursor: pointer;
-    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
     transition: 0.3s;
 }
 
 /* Hover effect */
 .card:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.08);
+    background: rgba(255,255,255,0.2);
 }
 nav {
     display: flex;
@@ -89,12 +91,33 @@ header {
         width: 90%;
     }
 
-    h1 {
-        font-size: 28px;
-    }
+   h1 {
+    font-size: 42px;
+    text-shadow: 0 0 10px gold;
 }
 footer {
     margin-top: 30px;
     padding: 15px;
     background: rgba(0,0,0,0.5);
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: show 1s forwards;
+}
+
+@keyframes show {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

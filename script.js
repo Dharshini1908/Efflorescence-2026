@@ -15,3 +15,17 @@ function openEvent(event) {
 
     alert(details[event]);
 }
+var eventDate = new Date("April 29, 2026 09:00:00").getTime();
+
+var x = setInterval(function () {
+
+    var now = new Date().getTime();
+    var distance = eventDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+
+    document.getElementById("countdown").innerHTML =
+        "⏳ " + days + " Days " + hours + " Hours Left";
+
+}, 1000);
