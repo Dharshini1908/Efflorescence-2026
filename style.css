@@ -121,3 +121,17 @@ footer {
         transform: translateY(0);
     }
 }
+.sticky-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: gold;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+html {
+    scroll-behavior: smooth;
+}
