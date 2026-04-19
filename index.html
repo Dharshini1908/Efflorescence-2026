@@ -5,11 +5,14 @@
   <title>Efflorescence 2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Fonts -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
   <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     body {
@@ -17,58 +20,108 @@
       font-family: 'Poppins', sans-serif;
       background: #0f172a;
       color: white;
+      scroll-behavior: smooth;
     }
 
+    /* HERO */
     header {
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      background: linear-gradient(to right, #0f172a, #1e293b);
       text-align: center;
+      background-image: url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      top: 0;
+      left: 0;
+    }
+
+    header * {
+      position: relative;
+      z-index: 1;
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+    }
+
+    p {
+      color: #cbd5f5;
+      font-size: 1.2rem;
     }
 
     .btn {
-      padding: 12px 25px;
+      padding: 12px 30px;
+      margin-top: 20px;
       background: linear-gradient(45deg, #9333ea, #06b6d4);
       border: none;
+      border-radius: 30px;
       color: white;
-      border-radius: 25px;
       cursor: pointer;
-      margin-top: 20px;
       transition: 0.3s;
     }
 
     .btn:hover {
       transform: scale(1.1);
+      box-shadow: 0 0 20px #9333ea;
     }
 
     section {
-      padding: 50px;
+      padding: 80px 20px;
       text-align: center;
     }
 
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px #9333ea;
+    }
+
+    /* CARDS */
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 25px;
     }
 
     .card {
       background: rgba(255,255,255,0.05);
-      padding: 20px;
+      padding: 25px;
       border-radius: 20px;
-      backdrop-filter: blur(10px);
-      transition: 0.3s;
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: 0.4s;
+    }
+
+    .card i {
+      font-size: 35px;
+      margin-bottom: 15px;
+      color: #06b6d4;
     }
 
     .card:hover {
-      transform: translateY(-10px);
+      transform: translateY(-12px) scale(1.05);
+      box-shadow: 0 0 25px #9333ea;
+    }
+
+    footer {
+      background: #020617;
+      padding: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #94a3b8;
     }
   </style>
 </head>
@@ -78,24 +131,50 @@
 <header>
   <h1 data-aos="fade-up">EFFLORESCENCE 2026</h1>
   <p data-aos="fade-up" data-aos-delay="200">Where Innovation Meets Celebration</p>
-  <button class="btn">Register Now</button>
+  <a href="#" class="btn">Register Now</a>
 </header>
 
 <section>
   <h2 data-aos="fade-up">Technical Events</h2>
   <div class="cards">
-    <div class="card" data-aos="zoom-in">Paper Presentation</div>
-    <div class="card" data-aos="zoom-in">Coding Contest</div>
+
+    <div class="card" data-aos="zoom-in">
+      <i class="fas fa-microphone"></i>
+      <h3>Paper Presentation</h3>
+      <p>Present your innovative ideas</p>
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+      <i class="fas fa-code"></i>
+      <h3>Coding Contest</h3>
+      <p>Test your programming skills</p>
+    </div>
+
   </div>
 </section>
 
 <section>
   <h2 data-aos="fade-up">Non-Technical Events</h2>
   <div class="cards">
-    <div class="card" data-aos="zoom-in">Treasure Hunt</div>
-    <div class="card" data-aos="zoom-in">Gaming</div>
+
+    <div class="card" data-aos="zoom-in">
+      <i class="fas fa-map"></i>
+      <h3>Treasure Hunt</h3>
+      <p>Find clues and win prizes</p>
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+      <i class="fas fa-gamepad"></i>
+      <h3>Gaming</h3>
+      <p>Fun and competitive gaming</p>
+    </div>
+
   </div>
 </section>
+
+<footer>
+  © 2026 Efflorescence | All Rights Reserved
+</footer>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
