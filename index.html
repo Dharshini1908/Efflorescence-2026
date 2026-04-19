@@ -1,185 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Efflorescence 2026</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Efflorescence 2K26</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
 
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+body{
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
+url('https://images.unsplash.com/photo-1562774053-701939374585');
+background-size:cover;
+background-attachment:fixed;
+color:white;
+}
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #0f172a;
-      color: white;
-      scroll-behavior: smooth;
-    }
+/* HEADER */
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
 
-    /* HERO */
-    header {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-      background-image: url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-    }
+.hero h1{font-size:3rem;color:#facc15}
+.hero p{margin:10px 0}
 
-    header::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.7);
-      top: 0;
-      left: 0;
-    }
+/* BUTTON */
+.btn{
+padding:12px 25px;
+border-radius:30px;
+background:#facc15;
+color:black;
+text-decoration:none;
+margin:5px;
+display:inline-block;
+}
 
-    header * {
-      position: relative;
-      z-index: 1;
-    }
+/* SECTION */
+section{
+padding:60px 20px;
+}
 
-    h1 {
-      font-size: 3.5rem;
-      letter-spacing: 2px;
-    }
+h2{
+text-align:center;
+color:#facc15;
+margin-bottom:20px;
+}
 
-    p {
-      color: #cbd5f5;
-      font-size: 1.2rem;
-    }
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
 
-    .btn {
-      padding: 12px 30px;
-      margin-top: 20px;
-      background: linear-gradient(45deg, #9333ea, #06b6d4);
-      border: none;
-      border-radius: 30px;
-      color: white;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+.card{
+background:rgba(30,41,59,0.9);
+padding:25px;
+border-radius:15px;
+text-align:center;
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:0.3s;
+}
 
-    .btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 20px #9333ea;
-    }
+.card:hover{
+transform:scale(1.08);
+background:#334155;
+}
 
-    section {
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 40px;
-      text-shadow: 0 0 10px #9333ea;
-    }
-
-    /* CARDS */
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.05);
-      padding: 25px;
-      border-radius: 20px;
-      backdrop-filter: blur(15px);
-      border: 1px solid rgba(255,255,255,0.1);
-      transition: 0.4s;
-    }
-
-    .card i {
-      font-size: 35px;
-      margin-bottom: 15px;
-      color: #06b6d4;
-    }
-
-    .card:hover {
-      transform: translateY(-12px) scale(1.05);
-      box-shadow: 0 0 25px #9333ea;
-    }
-
-    footer {
-      background: #020617;
-      padding: 30px;
-      text-align: center;
-      font-size: 14px;
-      color: #94a3b8;
-    }
-  </style>
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+</style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <header>
-  <h1 data-aos="fade-up">EFFLORESCENCE 2026</h1>
-  <p data-aos="fade-up" data-aos-delay="200">Where Innovation Meets Celebration</p>
-  <a href="#" class="btn">Register Now</a>
+<div class="hero">
+<h1>EFFLORESCENCE 2K26</h1>
+<p>Ganga Institute of Technology</p>
+<p>April 29 | ₹150 Registration</p>
+
+<a href="#events" class="btn">View Events</a>
+<a href="YOUR_MAIN_WHATSAPP_LINK" class="btn">Join WhatsApp</a>
+</div>
 </header>
 
-<section>
-  <h2 data-aos="fade-up">Technical Events</h2>
-  <div class="cards">
+<!-- EVENTS -->
+<section id="events">
+<h2>Technical Events</h2>
 
-    <div class="card" data-aos="zoom-in">
-      <i class="fas fa-microphone"></i>
-      <h3>Paper Presentation</h3>
-      <p>Present your innovative ideas</p>
-    </div>
+<div class="grid">
+<a href="paper.html" class="card">Paper Presentation</a>
+<a href="coding.html" class="card">Coding Contest</a>
+<a href="debug.html" class="card">Debugging</a>
+<a href="quiz.html" class="card">Quiz</a>
+</div>
 
-    <div class="card" data-aos="zoom-in">
-      <i class="fas fa-code"></i>
-      <h3>Coding Contest</h3>
-      <p>Test your programming skills</p>
-    </div>
-
-  </div>
 </section>
 
 <section>
-  <h2 data-aos="fade-up">Non-Technical Events</h2>
-  <div class="cards">
+<h2>Non Technical Events</h2>
 
-    <div class="card" data-aos="zoom-in">
-      <i class="fas fa-map"></i>
-      <h3>Treasure Hunt</h3>
-      <p>Find clues and win prizes</p>
-    </div>
+<div class="grid">
+<a href="treasure.html" class="card">Treasure Hunt</a>
+<a href="photo.html" class="card">Photography</a>
+<a href="dance.html" class="card">Dance</a>
+<a href="fun.html" class="card">Fun Games</a>
+</div>
 
-    <div class="card" data-aos="zoom-in">
-      <i class="fas fa-gamepad"></i>
-      <h3>Gaming</h3>
-      <p>Fun and competitive gaming</p>
-    </div>
+</section>
 
-  </div>
+<!-- REGISTER -->
+<section>
+<h2>Register</h2>
+<p style="text-align:center">Certificates for all | Cash prizes for winners</p>
+
+<div style="text-align:center;margin-top:20px">
+<a href="YOUR_GOOGLE_FORM_LINK" class="btn">Register Now</a>
+</div>
 </section>
 
 <footer>
-  © 2026 Efflorescence | All Rights Reserved
+<p>© Efflorescence 2K26</p>
 </footer>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
 
 </body>
 </html>
