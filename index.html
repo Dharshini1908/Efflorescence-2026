@@ -5,137 +5,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Efflorescence 2K26</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+<!-- PREMIUM FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 
-body{
-background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
-url('https://images.unsplash.com/photo-1562774053-701939374585');
-background-size:cover;
-background-attachment:fixed;
-color:white;
-}
-
-/* HEADER */
-header{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-
-.hero h1{font-size:3rem;color:#facc15}
-.hero p{margin:10px 0}
-
-/* BUTTON */
-.btn{
-padding:12px 25px;
-border-radius:30px;
-background:#facc15;
-color:black;
-text-decoration:none;
-margin:5px;
-display:inline-block;
-}
-
-/* SECTION */
-section{
-padding:60px 20px;
-}
-
-h2{
-text-align:center;
-color:#facc15;
-margin-bottom:20px;
-}
-
-/* GRID */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:rgba(30,41,59,0.9);
-padding:25px;
-border-radius:15px;
-text-align:center;
-text-decoration:none;
-color:white;
-font-size:18px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:scale(1.08);
-background:#334155;
-}
-
-/* FOOTER */
-footer{
-text-align:center;
-padding:20px;
-background:#020617;
-}
-</style>
+<link rel="icon" href="data:,">
 </head>
 
 <body>
 
-<!-- HERO -->
 <header>
-<div class="hero">
-<h1>EFFLORESCENCE 2K26</h1>
-<p>Kangeyam Institute of Technology</p>
-<p>April 29 | ₹150 Registration</p>
+  <div class="hero">
+    <h1>EFFLORESCENCE 2K26</h1>
+    <p>Kangeyam  Institute of Technology</p>
+    <p>April 29 | ₹150 Registration</p>
 
-<a href="#events" class="btn">View Events</a>
-<a href="https://chat.whatsapp.com/Jutmo8HhwLQ18UlbhoDTjj" class="btn">Join WhatsApp</a>
-</div>
+    <div class="btn-group">
+      <a href="#events" class="btn">View Events</a>
+      <a href="https://forms.gle/2u9B1xLWqZr6JnJd7" class="btn">Register</a>
+      <a href="https://chat.whatsapp.com/Jutmo8HhwLQ18UlbhoDTjj" class="btn">Join WhatsApp</a>
+    </div>
+  </div>
 </header>
 
-<!-- EVENTS -->
 <section id="events">
-<h2>Technical Events</h2>
-
-<div class="grid">
-<a href="paper.html" class="card">Paper Presentation</a>
-<a href="code.html" class="card">Crack the code</a>
-<a href="hack.html" class="card">Hack & Hunt</a>
-<a href="quiz.html" class="card">Quiz</a>
-</div>
-
+  <h2>Technical Events</h2>
+  <div class="grid">
+    <a href="paper.html" class="card">Paper Presentation</a>
+    <a href="quiz.html" class="card">Quiz</a>
+    <a href="hack.html" class="card">Innofation challenge</a>
+    <a href="code.html" class="card">Crack the code</a>
+    <a href="mini.html" class="card">Mini Hackathon</a>
+  </div>
 </section>
 
 <section>
-<h2>Non Technical Events</h2>
-
-<div class="grid">
-<a href="treasure.html" class="card">Treasure Hunt</a>
-<a href="sing.html" class="card">Singing</a>
-<a href="dance.html" class="card">Dance</a>
-<a href="puzzle.html" class="card">Solve the Puzzle</a>
-</div>
-
-</section>
-
-<!-- REGISTER -->
-<section>
-<h2>Register</h2>
-<p style="text-align:center">Certificates for all | Cash prizes for winners</p>
-
-<div style="text-align:center;margin-top:20px">
-<a href="https://forms.gle/DLQvxokBCVoqe89MA" class="btn">Register Now</a>
-</div>
+  <h2>Non Technical Events</h2>
+  <div class="grid">
+    <a href="puzzle.html" class="card">Solve the puzzle</a>
+    <a href="chase.html" class="card">Chase the beat</a>
+    <a href="dance.html" class="card">Dance</a>
+    <a href="singing.html" class="card">Singing</a>
+     <a href="treasure.html" class="card">Connection</a>
+  </div>
 </section>
 
 <footer>
-<p>© Efflorescence 2K26</p>
+  <p>© Efflorescence 2K26</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
